@@ -12,9 +12,13 @@ const blogSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
-        image: {
+        pictureId: {
             type: String,
-            required: true,
+            default: "",
+        },
+        picturePath: {
+            type: String,
+            default: "",
         },
         comments: {
             type: Array,

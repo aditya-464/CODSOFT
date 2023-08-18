@@ -23,6 +23,14 @@ const userSchema = new mongoose.Schema(
             required: true,
             unique: true,
         },
+        pictureId: {
+            type: String,
+            default: "",
+        },
+        picturePath: {
+            type: String,
+            default: "",
+        },
         bio: {
             type: String,
             required: true,
