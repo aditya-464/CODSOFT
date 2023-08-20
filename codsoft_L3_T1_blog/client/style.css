@@ -1,10 +1,240 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+:root {
+    --primary-dark: #025464;
+    --secondary-dark: #E57C23;
+    --primary-light: #F8F1F1;
+    --secondary-light: #E8AA42;
+    --h0: 72px;
+    --h1: 60px;
+    --h2: 48px;
+    --h3: 36px;
+    --h4: 30px;
+    --h5: 24px;
+    --h6: 18px;
+}
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: 'Prata', serif;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.home-outer-div {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+}
+
+.bg-left {
+    width: 50%;
+    height: 100%;
+    background-color: var(--secondary-dark);
+}
+
+.bg-right {
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-light);
+}
+
+.home-inner-div {
+    position: fixed;
+    width: 60vw;
+    height: 85vh;
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.home-inner-div .home-content,
+.login-content,
+.signup-content {
+    width: 50%;
+    height: 100%;
+}
+
+
+/* Home content */
+
+.home-content {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-content-inner {
+    width: 100%;
+}
+
+.home-content .title {
+    font-size: var(--h0);
+}
+
+.home-content .subtitle {
+    font-size: var(--h6);
+    letter-spacing: 0.15rem;
+    margin-top: 1rem;
+}
+
+.home-inner-div .img-content {
+    width: 50%;
+    height: 100%;
+}
+
+.home-inner-div .btn-grp {
+    display: flex;
+    letter-spacing: 0.15rem;
+    margin-top: 5rem;
+}
+
+.login-btn {
+    color: var(--primary-dark);
+    font-size: var(--h5);
+    width: 40%;
+    border: 1px solid var(--primary-dark);
+    text-align: center;
+    padding: 1.2rem 0;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+}
+
+.signup-btn {
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+    font-size: var(--h5);
+    width: 40%;
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-left: 5rem;
+
+}
+
+.signup-btn:hover {
+    cursor: pointer;
+}
+
+
+/* Login content and Signup content */
+
+.login-content {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none;*/
+}
+
+.login-content-inner {
+    width: 100%;
+}
+
+.signup-content {
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-content-inner {
+    width: 100%;
+}
+
+
+.login-content .title,
+.signup-content .title {
+    font-size: var(--h2);
+    /* text-align: center; */
+}
+
+.login-input,
+.signup-input {
+    width: 100%;
+    margin: 3rem 0;
+    /* text-align: center; */
+}
+
+.login-input input,
+.signup-input input {
+    width: 100%;
+    padding: 1.2rem 1rem;
+    font-family: 'Prata', serif;
+    font-size: var(--h6);
+    letter-spacing: 0.1rem;
+}
+
+input:focus {
+    border: none;
+    outline: 2px solid var(--primary-dark);
+}
+
+.login-input input:focus,
+.signup-input input:focus {
+    /* border: 1px solid var(--primary-dark); */
+    border: none;
+}
+
+.login-content .login-btn,
+.signup-content .signup-btn {
+    width: 100%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    /* margin: auto; */
+    padding: 1.2rem 0;
+}
+
+.signup-btn{
+    margin-left: 0;
+}
+
+.already-account {
+    /* text-align: center; */
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+    font-size: var(--h6);
+}
+
+.already-account span {
+    display: inline-block;
+    color: var(--primary-dark);
+}
+
+.already-account span:hover {
+    cursor: pointer;
+}
+
+/* Image content */
+
+.img-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -2,21 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Firebase Image Upload</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <title>Document</title>
   </head>
   <body>
-    <div class="imageUpload">
-      <input type="file" class="inp"/>
-      <button class="selectImage">Select Images</button>
-      <span class="filedata"></span>
-      <button class="upload">Upload</button>
-    </div>
+    <div class="home-outer-div">
+      <div class="bg">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+      </div>
 
-    <script type="module" src="imgUpload.js"></script>
+      <div class="home-inner-div">
+        <div class="home-content ">
+          <div class="home-content-inner">
+            <p class="title">Svanit</p>
+            <p class="subtitle">
+              Dive into the realm of blog haven where ideas flourish and stories
+              come alive.
+            </p>
+
+            <div class="btn-grp">
+              <div class="login-btn">
+                <p>Login</p>
+              </div>
+              <div class="signup-btn" style="margin-left: 3rem;">
+                <p>Signup</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="login-content display-none">
+          <div class="login-content-inner">
+            <p class="title">Login</p>
+            <div class="login-input">
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <div class="login-input">
+              <input type="password" placeholder="Password" name="password" />
+            </div>
+            <div class="btn-grp">
+              <div class="login-btn">
+                <p>Login</p>
+              </div>
+            </div>
+            <div class="already-account">
+              <p>Don't have an account? <span class="link">Signup</span> </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="signup-content display-none">
+          <div class="signup-content-inner">
+            <p class="title">Signup</p>
+            <div class="signup-input">
+              <input type="text" placeholder="Username" name="username" />
+            </div>
+            <div class="signup-input">
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <div class="signup-input">
+              <input type="password" placeholder="Password" name="password" />
+            </div>
+            <div class="btn-grp">
+              <div class="signup-btn">
+                <p>Signup</p>
+              </div>
+            </div>
+            <div class="already-account">
+              <p>Already have an account? <span class="link">Login</span> </p>
+            </div>
+          </div>
+        </div>
+        <div class="img-content">
+          <img src="./public/images/cd3.webp" alt="img" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
