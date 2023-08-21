@@ -134,6 +134,22 @@ html {
 }
 
 
+/* Home Tab */
+.home-tab {
+    /* position: fixed; */
+    width: 100%;
+    /* height: 100%; */
+    background-color: var(--primary-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* z-index: 1000; */
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
+    /* scroll-behavior: smooth; */
+    /* overflow-y: scroll; */
+}
+
+
 
 
 /* Hero Section */
@@ -181,6 +197,7 @@ html {
 .hero-right {
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 .hero-right img {
@@ -225,7 +242,7 @@ html {
 
 .footer-right .footer-icon {
     font-size: var(--h6);
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     opacity: 0.7;
     transition-duration: 200ms;
 }
@@ -257,6 +274,7 @@ html {
 .ques1-left {
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 .ques1-left img {
@@ -296,6 +314,7 @@ html {
 .ques2-left {
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 .ques2-left img {
@@ -320,4 +339,209 @@ html {
 .ques2-right .subtitle {
     margin-top: 5rem;
     font-size: var(--h5);
+}
+
+
+
+
+
+/* About tab */
+/* About section */
+.about-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.about-left .title {
+    font-size: var(--h2);
+}
+
+.about-left .subtitle {
+    font-size: var(--h5);
+    margin-top: 5rem;
+}
+
+.about-left .subtitle span {
+    display: inline-block;
+    transition-duration: 300ms;
+
+}
+
+.about-left .subtitle span:hover {
+    color: var(--primary-dark);
+}
+
+.about-right {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/* me section */
+.me-left {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.me-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.me-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.me-right .title {
+    font-size: var(--h2);
+}
+
+.me-right .subtitle {
+    font-size: var(--h5);
+    margin-top: 5rem;
+}
+
+.me-right .subtitle span {
+    display: inline-block;
+    transition-duration: 300ms;
+}
+
+.me-right .subtitle span:hover {
+    color: var(--primary-dark);
+}
+
+
+
+/* codsoft section */
+.codsoft {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* contact tab */
+.contact-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contact-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0.5rem;
+    padding-left: 3rem;
+}
+
+.contact-left .title {
+    font-size: var(--h2);
+    margin-bottom: 5rem;
+}
+
+.contact-form-icons {
+    display: flex;
+}
+
+.contact-form {
+    width: 80%;
+}
+
+.contact-input {
+    width: 100%;
+}
+
+.contact-input input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    font-family: 'Prata', serif;
+    margin-bottom: 3rem;
+    letter-spacing: 0.1rem;
+    font-size: var(--h6);
+    outline: none;
+    border: 1px solid black;
+}
+
+.contact-input input:focus,
+textarea:focus {
+    border: 1px solid var(--primary-dark);
+}
+
+.contact-btn {
+    width: 100%;
+}
+
+.contact-btn .btn {
+    width: 40%;
+    padding: 1.2rem;
+    font-size: var(--h5);
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.contact-icons {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-icons .contact-icon {
+    font-size: var(--h5);
+    margin: 0;
+    margin-bottom: 1.5rem;
+    transition-duration: 300ms;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+
+.contact-right {
+    width: 50%;
+    height: 100%;
+}
+
+.contact-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
