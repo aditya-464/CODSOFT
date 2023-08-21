@@ -12,6 +12,10 @@ const blogSchema = new mongoose.Schema(
             type: String,
             required: true,
         },
+        category : {
+            type : String,
+            required : true
+        },
         pictureId: {
             type: String,
             default: "",

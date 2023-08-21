@@ -2,7 +2,7 @@ import Blog from "../models/blog.js"
 
 export const createBlog = async (req, res) => {
     try {
-        const { userId, title, description, pictureId, picturePath } = req.body;
+        const { userId, title, description, category, pictureId, picturePath } = req.body;
         if (!userId || !title || !description || !pictureId || !picturePath) {
             return res.status(400).json({ message: "Please fill all the fields!" });
         }
@@ -11,6 +11,7 @@ export const createBlog = async (req, res) => {
             userId,
             title,
             description,
+            category,
             pictureId,
             picturePath
         });
@@ -66,7 +67,7 @@ export const getBlog = async (req, res) => {
 export const updateBlog = async (req, res) => {
     try {
         const { id } = req.params;
-        const { userId, title, description, pictureId, picturePath } = req.body;
+        const { userId, title, description, category, pictureId, picturePath } = req.body;
         if (!userId || !title || !description || !pictureId || !picturePath) {
             return res.status(400).json({ message: "Please fill all the fields!" });
         }
@@ -79,6 +80,7 @@ export const updateBlog = async (req, res) => {
                 userId,
                 title,
                 description,
+                category,
                 pictureId,
                 picturePath
             },
