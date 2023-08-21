@@ -19,8 +19,10 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
 
 .display-none {
@@ -35,11 +37,10 @@ html {
     background-color: var(--primary-light);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
@@ -119,11 +120,12 @@ html {
     border-radius: 10px;
     background-color: var(--primary-dark);
     animation-name: nav-page-links-rm;
-    animation-duration: 200ms;    
+    animation-duration: 200ms;
 }
 
 .nav-page-links:hover {
     cursor: pointer;
+
     .underline {
         animation-name: nav-page-links;
         animation-duration: 300ms;
@@ -135,54 +137,187 @@ html {
 
 
 /* Hero Section */
-.hero-section{
+.hero-section {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 1.5rem; */
     padding-right: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.hero-left{
+.hero-left {
     width: 50%;
     letter-spacing: 0.1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 1.5rem;
+    padding-right: 0.5rem;
 }
 
-.hero-left .title{
+.hero-left .title {
     font-size: var(--h2);
 }
 
-.hero-left .title span{
+.hero-left .title span {
     display: inline-block;
     transition-duration: 300ms;
     /* border-bottom: 2px solid transparent; */
 
 }
 
-.hero-left .title span:hover{
+.hero-left .title span:hover {
     color: var(--primary-dark);
     /* border-bottom: 2px solid var(--primary-dark); */
 }
 
-.hero-left .subtitle{
+.hero-left .subtitle {
     margin-top: 5rem;
     font-size: var(--h5);
 }
 
-.hero-right{
+.hero-right {
     width: 50%;
     height: 100%;
 }
 
-.hero-right img{
+.hero-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+/* Footer section */
+.footer-section {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: #1a1a1a;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    color: var(--primary-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section p {
+    display: inline-block;
+}
+
+.footer-section p {
+    opacity: 0.7;
+}
+
+.footer-section p:hover {
+    opacity: 1;
+    transition-duration: 200ms;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right .footer-icon {
+    font-size: var(--h6);
+    margin-left: 1.5rem;
+    opacity: 0.7;
+    transition-duration: 200ms;
+}
+
+.footer-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+/* section-space */
+.section-space {
+    width: 100%;
+    /* min-height: 25%; */
+}
+
+
+
+
+/* ques1 */
+.ques1 {
+    /* background-color: var(--primary-dark);
+    color: var(--primary-light); */
+    letter-spacing: 0.1rem;
+}
+
+.ques1-left {
+    width: 50%;
+    height: 100%;
+}
+
+.ques1-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ques1-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+    opacity: 0.9;
+}
+
+.ques1-right .title {
+    font-size: var(--h2);
+}
+
+.ques1-right .subtitle {
+    margin-top: 5rem;
+    font-size: var(--h5);
+}
+
+
+
+
+/* ques2 */
+.ques2 {
+    flex-direction: row-reverse;
+    letter-spacing: 0.1rem;
+}
+
+.ques2-left {
+    width: 50%;
+    height: 100%;
+}
+
+.ques2-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ques2-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.ques2-right .title {
+    font-size: var(--h2);
+}
+
+.ques2-right .subtitle {
+    margin-top: 5rem;
+    font-size: var(--h5);
 }
