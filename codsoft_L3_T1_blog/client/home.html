@@ -23,41 +23,47 @@
 
       <div class="home-inner-div">
         <!-- Navbar -->
-        <nav class="navbar">
-          <div class="nav-left">
-            <div class="nav-logo">
-              <span>Svanit</span>
+        <div class="navbar-outer">
+          <nav class="navbar">
+            <div class="nav-left">
+              <div class="nav-logo">
+                <span>Svanit</span>
+              </div>
             </div>
-          </div>
 
-          <div class="nav-right">
-            <div class="nav-page-links">
-              <div class="overline"></div>
-              <p>Home</p>
-              <div class="underline"></div>
+            <div class="nav-right">
+              <div class="nav-page-links">
+                <div class="overline"></div>
+                <p>Home</p>
+                <div class="underline"></div>
+              </div>
+              <div class="nav-page-links">
+                <div class="overline"></div>
+                <p>About</p>
+                <div class="underline"></div>
+              </div>
+              <div class="nav-page-links">
+                <div class="overline"></div>
+                <p>Pages</p>
+                <div class="underline"></div>
+              </div>
+              <div class="nav-page-links">
+                <div class="overline"></div>
+                <p>Contact</p>
+                <div class="underline"></div>
+              </div>
+              <div class="nav-page-links" style="margin-right: 0">
+                <div class="overline"></div>
+                <p>Account</p>
+                <div class="underline"></div>
+              </div>
             </div>
-            <div class="nav-page-links">
-              <div class="overline"></div>
-              <p>About</p>
-              <div class="underline"></div>
-            </div>
-            <div class="nav-page-links">
-              <div class="overline"></div>
-              <p>Pages</p>
-              <div class="underline"></div>
-            </div>
-            <div class="nav-page-links">
-              <div class="overline"></div>
-              <p>Contact</p>
-              <div class="underline"></div>
-            </div>
-            <div class="nav-page-links" style="margin-right: 0">
-              <div class="overline"></div>
-              <p>Account</p>
-              <div class="underline"></div>
-            </div>
+          </nav>
+          <div class="options-list-icon">
+            <i class="fa-solid fa-bars open-icon"></i>
+            <i class="fa-solid fa-xmark close-icon display-none"></i>
           </div>
-        </nav>
+        </div>
 
         <!-- Home tab -->
         <!-- Hero section -->
@@ -223,11 +229,11 @@
           credentials
           logout
          -->
-        <div class="account-section">
-          <div class="options-list-icon">
+        <div class="account-section ">
+          <!-- <div class="options-list-icon">
             <i class="fa-solid fa-bars open-icon"></i>
             <i class="fa-solid fa-xmark close-icon display-none"></i>
-          </div>
+          </div> -->
           <div class="account-left">
             <div class="options-list">
               <div class="option" id="profile-image">
@@ -245,8 +251,18 @@
             </div>
           </div>
           <div class="account-right">
-            <div class="account-right-container profile-image-container"></div>
-            <div class="account-right-container user-details-container display-none">
+            <div
+              class="account-right-container profile-image-container display-none"
+            >
+              <div class="profile-image-container-left">
+                <img src="./public/images/me1 (1).webp" alt="user-image" />
+              </div>
+            </div>
+            <div class="profile-image-container-right">
+              <div class="choose-image"></div>
+              <div class="btn-grp"></div>
+            </div>
+            <div class="account-right-container user-details-container">
               <div class="account-right-container-row">
                 <div class="account-right-container-field">
                   <label for="account-fullname">Name</label>
@@ -269,9 +285,45 @@
                   />
                 </div>
               </div>
+              <div class="account-right-container-row">
+                <div class="account-right-container-field">
+                  <label for="account-fullname">Bio</label>
+                  <input
+                    contenteditable="false"
+                    type="text"
+                    id="account-bio"
+                    name="account-bio"
+                    placeholder="Ram Krishna, the supreme"
+                  />
+                </div>
+                <div class="account-right-container-field">
+                  <label for="account-username">Location</label>
+                  <input
+                    contenteditable="false"
+                    type="text"
+                    id="account-location"
+                    name="account-location"
+                    placeholder="the_creator"
+                  />
+                </div>
+              </div>
+              <div class="account-right-container-row account-btn-grp">
+                <div class="btn-field">
+                  <div class="edit-btn">
+                    <p>Edit</p>
+                  </div>
+                  <div class="save-btn">
+                    <p>Save</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="account-right-container credentials-container"></div>
-            <div class="account-right-container logout-container"></div>
+            <div
+              class="account-right-container credentials-container display-none"
+            ></div>
+            <div
+              class="account-right-container logout-container display-none"
+            ></div>
           </div>
         </div>
 

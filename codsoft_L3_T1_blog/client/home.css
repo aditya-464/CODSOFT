@@ -18,11 +18,11 @@ html {
     font-family: 'Prata', serif;
 }
 
+/* ***************** REMOVE BOX SHADOW ON SMALL SCREENS ***************** */
+
 ::-webkit-scrollbar {
     width: 0;
-    /* Remove scrollbar space */
     background: transparent;
-    /* Optional: just make scrollbar invisible */
 }
 
 .display-none {
@@ -48,17 +48,22 @@ html {
 
 /* Navbar */
 
-.navbar {
+.navbar-outer {
     position: fixed;
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.navbar {
+    /* position: fixed; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 1.5rem;
     background-color: var(--primary-light);
-    z-index: 100;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px; */
-    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px; */
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
@@ -73,8 +78,6 @@ html {
 .nav-logo:hover {
     cursor: pointer;
 }
-
-
 
 .nav-right {
     width: auto;
@@ -131,6 +134,24 @@ html {
         animation-duration: 300ms;
         width: 100%;
     }
+}
+
+.options-list-icon {
+    width: fit-content;
+    margin-left: 1.5rem;
+    z-index: 1000;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+}
+
+.options-list-icon i {
+    font-size: var(--h5);
+    transition-duration: 200ms;
+}
+
+.options-list-icon i:hover {
+    cursor: pointer;
+    color: var(--primary-dark);
 }
 
 
@@ -219,7 +240,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .footer-section p {
@@ -557,78 +578,70 @@ textarea:focus {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     letter-spacing: 0.1rem;
-}
-
-.options-list-icon {
-    margin-top: 5rem;
-    margin-left: 1.5rem;
-    position: fixed;
-    z-index: 1000;
-    padding: 0.5rem;
-    border-radius: 5px;
-}
-
-.options-list-icon i {
-    font-size: var(--h5);
-    transition-duration: 200ms;
-}
-
-.options-list-icon i:hover {
-    cursor: pointer;
-    color: var(--primary-dark);
+    /* margin-top: 10rem; */
+    overflow: hidden;
 }
 
 .account-left {
     width: 50%;
     height: 100%;
-    translate: -100% 0;
-    transition-duration: 300ms;
-    position: sticky;
+    translate: -120% 0;
+    transition-duration: 400ms;
+    position: relative;
+    top: 0;
+    left: 0;
     z-index: 100;
+    background-color: var(--primary-light);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 .account-left .options-list {
     width: 100%;
     height: 100%;
-    margin-top: 5rem;
-    padding-left: 5rem;
-    border-right: 1px solid black;
 }
 
 .account-left .options-list .option {
-    font-size: var(--h5);
+    font-size: var(--h4);
     padding: 0.5rem 1.5rem;
 }
 
 .account-left .options-list .option:hover {
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    opacity: 0.9;
 }
 
 .account-right {
-    width: 50%;
-    height: 100%;
-    overflow: scroll;
-    z-index: -1;
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-duration: 300ms;
+    overflow: hidden;
+    z-index: 10;
 }
 
 .account-right-container {
     width: 100%;
-    margin-top: 5rem;
+    /* height: 100%; */
     padding: 0 1.5rem;
 }
 
 .account-right-container-row {
-    width: 100%;
-    /* display: flex; */
+    width: 80%;
+    display: flex;
     justify-content: space-between;
+    margin: auto;
+    margin-bottom: 2rem;
+
+    /* border: 2px solid blue; */
 }
 
 .account-right-container-field {
-    width: 75%;
-    font-size: var(--h6);
+    width: 47%;
+    font-size: var(--h4);
     display: flex;
     flex-direction: column;
 }
@@ -640,7 +653,7 @@ textarea:focus {
 .account-right-container-field input {
     width: 100%;
     font-family: "Prata", "serif";
-    font-size: var(--h6);
+    font-size: var(--h4);
     padding: 0.5rem 1rem;
     outline: none;
     border: 1px solid black;
@@ -651,5 +664,38 @@ textarea:focus {
 }
 
 .account-right-container-field input:focus {
+    border: 1px solid var(--primary-dark);
+}
+
+.account-btn-grp{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5rem;
+}
+
+.account-btn-grp .btn-field{
+    width: 47%;
+    font-size: var(--h4);
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-btn-grp .edit-btn, .save-btn{
+    width: 45%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    border-radius: 1px;
+}
+
+.account-btn-grp .edit-btn:hover, .save-btn:hover{
+    cursor: pointer;
+}
+
+.account-btn-grp .edit-btn{
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
     border: 1px solid var(--primary-dark);
 }
