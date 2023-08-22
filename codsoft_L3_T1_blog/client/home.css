@@ -219,6 +219,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 .footer-section p {
@@ -453,6 +454,7 @@ html {
     width: 100%;
     height: 100%;
     display: flex;
+    /* flex-direction: row-reverse; */
 }
 
 .contact-left {
@@ -538,10 +540,116 @@ textarea:focus {
 .contact-right {
     width: 50%;
     height: 100%;
+    overflow: hidden;
 }
 
 .contact-right img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+
+
+/* Account tab */
+.account-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    letter-spacing: 0.1rem;
+}
+
+.options-list-icon {
+    margin-top: 5rem;
+    margin-left: 1.5rem;
+    position: fixed;
+    z-index: 1000;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.options-list-icon i {
+    font-size: var(--h5);
+    transition-duration: 200ms;
+}
+
+.options-list-icon i:hover {
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+
+.account-left {
+    width: 50%;
+    height: 100%;
+    translate: -100% 0;
+    transition-duration: 300ms;
+    position: sticky;
+    z-index: 100;
+}
+
+.account-left .options-list {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    padding-left: 5rem;
+    border-right: 1px solid black;
+}
+
+.account-left .options-list .option {
+    font-size: var(--h5);
+    padding: 0.5rem 1.5rem;
+}
+
+.account-left .options-list .option:hover {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    opacity: 0.9;
+}
+
+.account-right {
+    width: 50%;
+    height: 100%;
+    overflow: scroll;
+    z-index: -1;
+}
+
+.account-right-container {
+    width: 100%;
+    margin-top: 5rem;
+    padding: 0 1.5rem;
+}
+
+.account-right-container-row {
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.account-right-container-field {
+    width: 75%;
+    font-size: var(--h6);
+    display: flex;
+    flex-direction: column;
+}
+
+.account-right-container-field label {
+    margin-bottom: 0.5rem;
+}
+
+.account-right-container-field input {
+    width: 100%;
+    font-family: "Prata", "serif";
+    font-size: var(--h6);
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 1px;
+    letter-spacing: 0.1rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.account-right-container-field input:focus {
+    border: 1px solid var(--primary-dark);
 }

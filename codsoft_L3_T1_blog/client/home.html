@@ -168,7 +168,7 @@
         </div>
 
         <!-- Contact tab -->
-        <div class="contact-section">
+        <div class="contact-section display-none">
           <div class="contact-left">
             <div class="title">
               <p>Contact</p>
@@ -212,7 +212,66 @@
             </div>
           </div>
           <div class="contact-right">
-            <img src="./public/images/contact.webp" alt="" />
+            <img class="zoom" src="./public/images/contact.webp" alt="" />
+          </div>
+        </div>
+
+        <!-- Account section -->
+        <!-- 
+          profile img
+          details
+          credentials
+          logout
+         -->
+        <div class="account-section">
+          <div class="options-list-icon">
+            <i class="fa-solid fa-bars open-icon"></i>
+            <i class="fa-solid fa-xmark close-icon display-none"></i>
+          </div>
+          <div class="account-left">
+            <div class="options-list">
+              <div class="option" id="profile-image">
+                <p>Profile Image</p>
+              </div>
+              <div class="option" id="user-details">
+                <p>User Details</p>
+              </div>
+              <div class="option" id="credentials">
+                <p>Credentials</p>
+              </div>
+              <div class="option" id="logout">
+                <p>Logout</p>
+              </div>
+            </div>
+          </div>
+          <div class="account-right">
+            <div class="account-right-container profile-image-container"></div>
+            <div class="account-right-container user-details-container display-none">
+              <div class="account-right-container-row">
+                <div class="account-right-container-field">
+                  <label for="account-fullname">Name</label>
+                  <input
+                    contenteditable="false"
+                    type="text"
+                    id="account-fullname"
+                    name="account-fullname"
+                    placeholder="Ram Krishna"
+                  />
+                </div>
+                <div class="account-right-container-field">
+                  <label for="account-username">Username</label>
+                  <input
+                    contenteditable="false"
+                    type="text"
+                    id="account-username"
+                    name="account-username"
+                    placeholder="the_creator"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="account-right-container credentials-container"></div>
+            <div class="account-right-container logout-container"></div>
           </div>
         </div>
 
@@ -243,5 +302,6 @@
         </div>
       </div>
     </div>
+    <script src="account.js"></script>
   </body>
 </html>
