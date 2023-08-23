@@ -18,9 +18,20 @@ const inp = document.querySelector(".inp");
 const upload = document.querySelector(".upload");
 const selectImageBtn = document.querySelector(".selectImage");
 const fileData = document.querySelector(".filedata");
+const chooseImage = document.querySelector(".profile-image-container-right .choose-image-div");
+const btnGrp = document.querySelector(".upload-btn-grp");
+
+chooseImage.onclick = ()=>{
+    console.log("Hare krishna");
+}
+
 let file;
 let fileName;
 let uploadedFileName;
+
+chooseImage.onclick = function () {
+    selectImage();
+}
 
 selectImageBtn.onclick = function () {
     selectImage();
@@ -36,6 +47,9 @@ inp.onchange = function (e) {
 
 const getImageData = (e) => {
     file = e.target.files[0];
+    chooseImage.children[0].textContent=`${file.name}`;
+    btnGrp.style.justifyContent= "space-between";
+    btnGrp.children[0].style.visibility = "visible";
     fileName = Date.now() + "   " + file.name;
     if (fileName) {
         fileData.style.display = "block";

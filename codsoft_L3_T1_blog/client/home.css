@@ -603,7 +603,7 @@ textarea:focus {
 }
 
 .account-left .options-list .option {
-    font-size: var(--h4);
+    font-size: var(--h5);
     padding: 0.5rem 1.5rem;
 }
 
@@ -612,9 +612,11 @@ textarea:focus {
     color: var(--primary-light);
 }
 
+/* user details */
+
 .account-right {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -624,24 +626,23 @@ textarea:focus {
 }
 
 .account-right-container {
-    width: 100%;
+    width: 80%;
     /* height: 100%; */
     padding: 0 1.5rem;
+    margin: auto;
 }
 
 .account-right-container-row {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: auto;
     margin-bottom: 2rem;
-
-    /* border: 2px solid blue; */
 }
 
 .account-right-container-field {
     width: 47%;
-    font-size: var(--h4);
+    font-size: var(--h6);
     display: flex;
     flex-direction: column;
 }
@@ -653,7 +654,7 @@ textarea:focus {
 .account-right-container-field input {
     width: 100%;
     font-family: "Prata", "serif";
-    font-size: var(--h4);
+    font-size: var(--h5);
     padding: 0.5rem 1rem;
     outline: none;
     border: 1px solid black;
@@ -667,20 +668,21 @@ textarea:focus {
     border: 1px solid var(--primary-dark);
 }
 
-.account-btn-grp{
+.account-btn-grp {
     display: flex;
     justify-content: flex-end;
     margin-top: 5rem;
 }
 
-.account-btn-grp .btn-field{
+.account-btn-grp .btn-field {
     width: 47%;
-    font-size: var(--h4);
+    font-size: var(--h6);
     display: flex;
     justify-content: space-between;
 }
 
-.account-btn-grp .edit-btn, .save-btn{
+.account-btn-grp .edit-btn,
+.save-btn {
     width: 45%;
     background-color: var(--primary-dark);
     color: var(--primary-light);
@@ -690,11 +692,187 @@ textarea:focus {
     border-radius: 1px;
 }
 
-.account-btn-grp .edit-btn:hover, .save-btn:hover{
+.account-btn-grp .edit-btn:hover,
+.save-btn:hover {
     cursor: pointer;
 }
 
-.account-btn-grp .edit-btn{
+.account-btn-grp .edit-btn {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+}
+
+
+
+/* profile image */
+
+.profile-image-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row-reverse; */
+    padding-left: 0;
+}
+
+.account-right-container .profile-image-container-left {
+    width: 47%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.profile-image-container-left img {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+.profile-image-container-right {
+    width: 47%;
+    height: 100%;
+}
+
+.profile-image-container-right .imageUpload {
+    width: 100%;
+    height: 100%;
+}
+
+.profile-image-container-right .choose-image-div {
+    width: 100%;
+    font-size: var(--h6);
+    opacity: 0.7;
+    text-transform: capitalize;
+    border: 1px dashed black;
+    border-radius: 1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profile-image-container-right .choose-image-div:hover {
+    cursor: pointer;
+}
+
+.profile-image-container-right .inp {
+    height: 1px;
+    visibility: hidden;
+}
+
+.profile-image-container-right .selectImage {
+    height: 1px;
+    visibility: hidden;
+
+}
+
+.profile-image-container-right .filedata {
+    height: 1px;
+    visibility: hidden;
+}
+
+.profile-image-container-right .upload-btn-grp {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-image-container-right .upload,
+.cancel {
+    width: 45%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    padding: 1rem;
+    text-align: center;
+    font-size: var(--h6);
+    letter-spacing: 0.1rem;
+    border-radius: 1px;
+    margin-top: 3rem;
+}
+
+.profile-image-container-right .cancel {
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+    visibility: hidden;
+}
+
+.profile-image-container-right .upload:hover {
+    cursor: pointer;
+}
+
+.credentials-btn-row{
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.account-right-container-row .credentials-btn-grp{
+    width: 47%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+/* Credentials */
+
+.credentials-btn-grp .cancel, .save{
+    width: 47%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-size: var(--h6);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.credentials-btn-grp .cancel{
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+}
+
+
+/* Logout */
+
+.logout-ques p{
+    margin: auto;
+    font-size: var(--h5);
+}
+
+.logout-btn-grp{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logout-btn-grp .yes, .no{
+    width: 47%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-size: var(--h6);
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.logout-btn-grp .yes{
     background-color: var(--primary-light);
     color: var(--primary-dark);
     border: 1px solid var(--primary-dark);

@@ -7,7 +7,7 @@ const icon = document.querySelector(".options-list-icon");
 let navHeight = navbar.getBoundingClientRect().height;
 const accountSection = document.querySelector(".account-section");
 accountSection.style.marginTop = `${navHeight}`+"px";
-accountRight.style.paddingTop = `${0.5*navHeight}`+"px";
+accountRight.style.paddingTop = `${navHeight}`+"px";
 
 
 
