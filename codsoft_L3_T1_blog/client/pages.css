@@ -68,7 +68,6 @@ html {
     width: 100%;
     object-fit: cover;
     border-radius: 1px;
-    cursor: pointer;
 }
 
 .see-blog-top-left-text{
@@ -98,9 +97,8 @@ html {
 
 .see-blog-top-left-text .title{
     margin-top: 1.5rem;
-    font-size: var(--h6);
+    font-size: var(--h5);
     font-weight: 600;
-    cursor: pointer;
 }
 
 
@@ -111,8 +109,77 @@ html {
     padding-right: 2rem;
     font-size: 16px;
     text-align: justify;
-    /* margin-bottom: 2rem; */
 }
 
+.comments-section{
+    width: 100%;
+    max-height: 50vh;
+    overflow: scroll;
+    margin-top: 5rem;
+    color: var(--primary-dark);
+}
+
+.comments-section .view-comments .heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
+    font-size: var(--h6);
+    border-radius: 1px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.comment-grp{
+    border: 1px solid var(--primary-dark);
+}
+
+.comment-individual-grp{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+.comment-individual-grp .comment-individual{
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+.comment-individual .name{
+    font-weight: 600;
+}
+.comment-individual .comment{
+    margin-top: 0.5rem;
+}
+.add-comment{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border-top: 1px solid var(--primary-dark); */
+    padding: 2rem;
+}
+
+.add-comment .input-comment{
+    width: 100%;
+}
+
+.add-comment input{
+    width: 100%;
+    font-size: 14px;
+    padding: 1rem;
+    font-family: "Prata", "serif";
+    outline: none;
+    border : 1px solid black ;
+    border-radius: 1px;
+    letter-spacing: 0.1rem;
+}
+
+.add-comment .send-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--h4);
+    padding-left: 1rem;
+}
 
 
