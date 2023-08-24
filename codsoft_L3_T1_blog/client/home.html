@@ -180,7 +180,7 @@
 
         <!-- Pages tab -->
         <div class="pages-section">
-          <div class="see-blog-container">
+          <div class="see-blog-container display-none">
             <div class="see-blog-top">
               <div class="see-blog-top-left">
                 <div class="see-blog-top-left-image">
@@ -203,40 +203,37 @@
               <div class="see-blog-top-right">
                 <div class="description-container">
                   <p>
-                    The "Dawn of AI" marks the inception of a new era that is
-                    redefining the way we live, work, and interact with
-                    technology. As artificial intelligence advances at an
-                    unprecedented pace, it is reshaping industries, from
-                    healthcare to finance, and from manufacturing to
-                    entertainment. The blend of machine learning, data
-                    analytics, and automation is not only enhancing efficiency
-                    but also raising thought-provoking questions about ethics,
-                    jobs, and the very nature of human intelligence. The journey
-                    ahead promises both remarkable innovations and complex
-                    challenges, making the "Dawn of AI" a pivotal juncture in
-                    our history. The "Dawn of AI" marks the inception of a new
-                    era that is redefining the way we live, work, and interact
-                    with technology. As artificial intelligence advances at an
-                    unprecedented pace, it is reshaping industries, from
-                    healthcare to finance, and from manufacturing to
-                    entertainment. The blend of machine learning, data
-                    analytics, and automation is not only enhancing efficiency
-                    but also raising thought-provoking questions about ethics,
-                    jobs, and the very nature of human intelligence. The journey
-                    ahead promises both remarkable innovations and complex
-                    challenges, making the "Dawn of AI" a pivotal juncture in
-                    our history. The "Dawn of AI" marks the inception of a new
-                    era that is redefining the way we live, work, and interact
-                    with technology. As artificial intelligence advances at an
-                    unprecedented pace, it is reshaping industries, from
-                    healthcare to finance, and from manufacturing to
-                    entertainment. The blend of machine learning, data
-                    analytics, and automation is not only enhancing efficiency
-                    but also raising thought-provoking questions about ethics,
-                    jobs, and the very nature of human intelligence. The journey
-                    ahead promises both remarkable innovations and complex
-                    challenges, making the "Dawn of AI" a pivotal juncture in
-                    our history.
+                    Blockchain Technology: A Brief Overview Blockchain, the
+                    technology behind cryptocurrencies like Bitcoin, is
+                    revolutionizing industries beyond finance. At its core, it's
+                    a decentralized and immutable digital ledger, recording
+                    transactions transparently. Each "block" contains data and a
+                    unique code, "hash," linking it to the previous block,
+                    forming a chain. Transparency & Security: Blockchain's
+                    decentralized nature ensures transparency, as every
+                    participant has access to the same data. Data is stored
+                    across the network, making it resilient to attacks. Once
+                    recorded, information is nearly impossible to alter,
+                    enhancing security. Applications: Beyond cryptocurrencies,
+                    blockchain finds applications in supply chain management,
+                    healthcare, voting systems, and more. It ensures product
+                    traceability, reduces fraud, and increases efficiency in
+                    various sectors. Smart Contracts: Blockchain enables the
+                    creation of self-executing contracts, known as smart
+                    contracts. These automatically trigger actions when
+                    conditions are met, streamlining processes across
+                    industries. Challenges: Scalability, energy consumption, and
+                    regulatory concerns pose challenges. As blockchain adoption
+                    grows, addressing these issues becomes crucial. Future
+                    Outlook: Blockchain's potential is vast. From transforming
+                    financial services to reshaping how data is managed, it
+                    promises a decentralized, secure, and transparent future. In
+                    conclusion, blockchain technology's decentralized, secure,
+                    and transparent nature has far-reaching implications across
+                    industries, revolutionizing how we transact and share data.
+                    As challenges are addressed, its impact is set to grow,
+                    shaping the future of various sectors.across the network,
+                    making it resilient to attacks. Once recorded, information.
                   </p>
                 </div>
                 <div class="comments-section">
@@ -257,7 +254,7 @@
                         <div class="comment-individual">
                           <p class="name">Aditya Giri</p>
                           <p class="comment">Hare Krishna Hare Rama</p>
-                        </div> 
+                        </div>
                       </div>
                     </div>
                     <div class="add-comment">
@@ -277,7 +274,41 @@
             </div>
           </div>
           <div class="my-blogs-container"></div>
-          <div class="create-blog-container"></div>
+          <div class="create-blog-container ">
+            <div class="input-fields">
+              <div class="title-div">
+                <label for="create-blog-title">Title</label>
+                <input
+                  type="text"
+                  placeholder="Under 70 characters"
+                  minlength="2"
+                  maxlength="70"
+                  id="create-blog-title"
+                  name="create-blog-title"
+                />
+              </div>
+              <div class="description-div">
+                <label for="create-blog-description">Description</label>
+                <textarea
+                  type="text"
+                  placeholder="Under 1200 characters"
+                  rows="5"
+                  minlength="2"
+                  maxlength="1200"
+                  id="create-blog-description"
+                  name="create-blog-description"
+                ></textarea>
+              </div>
+              <div class="img-file-div">
+                <input class="select-file-input" type="file" name="create-choose-file" id="create-choose-file" placeholder="Select Image">
+              </div>
+            </div>
+            <div class="create-btn-grp">
+              <div class="publish-btn">
+                <p>Publish</p>
+              </div>
+            </div>
+          </div>
           <div class="update-blog-container"></div>
           <div class="search-blog-container"></div>
           <div class="all-blogs-container"></div>

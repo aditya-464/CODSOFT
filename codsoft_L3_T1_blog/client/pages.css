@@ -197,3 +197,58 @@ html {
 }
 
 
+
+
+/* Create blog section */
+.create-blog-container{
+    width: 100%;
+    letter-spacing: 0.1rem;
+    padding-top: 2rem;
+}
+
+.create-blog-container .input-fields{
+    width: 60%;
+    margin: auto;
+    font-size: var(--h6);
+    display: flex;
+    flex-direction: column;
+}
+.create-blog-container label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.create-blog-container input, textarea{
+    font-family: "Prata", "serif";
+    font-size: var(--h6);
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    outline: none;
+    border: 1px solid var(--primary-dark);
+    border-radius: 1px;
+    letter-spacing: 0.1rem;
+}
+.create-blog-container .select-file-input{
+    border: none;
+}
+
+.create-blog-container .create-btn-grp{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.create-btn-grp .publish-btn{
+    width: 25%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-size: var(--h6);
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+
+
