@@ -239,6 +239,7 @@ textarea {
 
 .create-blog-container .select-file-input {
     border: none;
+    padding: 0;
 }
 
 .create-blog-container .create-btn-grp {
@@ -506,11 +507,86 @@ textarea {
     opacity: 0.9;
 }
 
-.my-blogs-individual-category-individual-blog .all-blog-individual-author{
+.my-blogs-individual-category-individual-blog .my-blog-individual-category{
     font-size: 14px;
-    margin: 1rem 0;
+    text-align: center;
+    margin: 1.5rem 0;
+    min-width: 30%;
+    padding: 1rem 2rem;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    display: inline-block;
+    border-radius: 1px;
 }
-.my-blogs-individual-category-individual-blog .all-blog-individual-title{
+.my-blogs-individual-category-individual-blog .my-blog-individual-title{
     font-size: var(--h6);
     font-weight: bold;
+}
+
+
+
+
+
+/* Update blog section */
+.update-blog-container {
+    width: 100%;
+    letter-spacing: 0.1rem;
+    padding-top: 2rem;
+}
+
+.update-blog-container .input-fields {
+    width: 60%;
+    margin: auto;
+    font-size: var(--h6);
+    display: flex;
+    flex-direction: column;
+}
+
+.update-blog-container label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.update-blog-container input,
+textarea {
+    font-family: "Prata", "serif";
+    font-size: var(--h6);
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 3rem;
+    outline: none;
+    border: 1px solid var(--primary-dark);
+    border-radius: 1px;
+    letter-spacing: 0.1rem;
+}
+
+.update-blog-container .select-file-input {
+    border: none;
+    padding: 0;
+}
+
+.update-blog-container .update-btn-grp {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.update-btn-grp .update-btn, .cancel-btn {
+    width: 25%;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-size: var(--h6);
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3rem;
+    border-radius: 1px;
+}
+
+.update-btn-grp .cancel-btn{
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    border: 1px solid var(--primary-dark);
 }
