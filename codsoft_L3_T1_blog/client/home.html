@@ -274,15 +274,15 @@
             </div>
           </div>
           <div class="my-blogs-container"></div>
-          <div class="create-blog-container ">
+          <div class="create-blog-container display-none">
             <div class="input-fields">
               <div class="title-div">
                 <label for="create-blog-title">Title</label>
                 <input
                   type="text"
-                  placeholder="Under 70 characters"
+                  placeholder="Under 60 characters"
                   minlength="2"
-                  maxlength="70"
+                  maxlength="60"
                   id="create-blog-title"
                   name="create-blog-title"
                 />
@@ -300,7 +300,13 @@
                 ></textarea>
               </div>
               <div class="img-file-div">
-                <input class="select-file-input" type="file" name="create-choose-file" id="create-choose-file" placeholder="Select Image">
+                <input
+                  class="select-file-input"
+                  type="file"
+                  name="create-choose-file"
+                  id="create-choose-file"
+                  placeholder="Select Image"
+                />
               </div>
             </div>
             <div class="create-btn-grp">
@@ -309,9 +315,137 @@
               </div>
             </div>
           </div>
-          <div class="update-blog-container"></div>
-          <div class="search-blog-container"></div>
-          <div class="all-blogs-container"></div>
+          <div class="update-blog-container display-none"></div>
+          <div class="search-blog-container display-none"></div>
+          <div class="all-blogs-container">
+            <div class="all-blogs-introduction">
+              <div class="all-blogs-introduction-left">
+                <div class="all-blogs-introduction-left-content">
+                  <div class="all-blogs-title">
+                    <p>All blogs</p>
+                  </div>
+                  <div class="all-blogs-subtitle">
+                    <p>
+                      Dive into a World of Endless Inspiration by Svanit Blogs -
+                      Where Every Word Sparks New Possibilities and Ideas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="all-blogs-introduction-right">
+                <img
+                  class="zoom"
+                  src="./public/images/all-blogs-intro.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="all-blogs-partition">
+              <p>Advertisement</p>
+            </div>
+            <div class="all-blogs-individual-category">
+              <div class="all-blogs-individual-category-title">
+                <p>Lifestyle</p>
+              </div>
+              <div class="all-blogs-individual-category-blogs">
+                <div class="all-blogs-individual-category-individual-blog">
+                  <div
+                    class="all-blogs-individual-category-individual-blog-image"
+                  >
+                    <img
+                      src="./public/images/trending1.jpeg"
+                      alt="all-blogs-image"
+                    />
+                  </div>
+                  <div class="blog-data">
+                    <p class="all-blog-individual-author">
+                      <span>By - </span>Aditya Giri
+                    </p>
+                    <p class="all-blog-individual-title">
+                      Aurora Awakenings: Nature's Spectacular Light Show and Its
+                      Mesmerizing Secrets
+                    </p>
+                  </div>
+                </div>
+                <div class="all-blogs-individual-category-individual-blog">
+                  <div
+                    class="all-blogs-individual-category-individual-blog-image"
+                  >
+                    <img
+                      src="./public/images/trending2.webp"
+                      alt="all-blogs-image"
+                    />
+                  </div>
+                  <div class="blog-data">
+                    <p class="all-blog-individual-author">
+                      <span>By - </span>Aditya Giri
+                    </p>
+                    <p class="all-blog-individual-title">
+                      Radiant Beginnings: Capturing the Magic and Serenity of a
+                      Sunrise
+                    </p>
+                  </div>
+                </div>
+                <div class="all-blogs-individual-category-individual-blog">
+                  <div
+                    class="all-blogs-individual-category-individual-blog-image"
+                  >
+                    <img
+                      src="./public/images/trending3.webp"
+                      alt="all-blogs-image"
+                    />
+                  </div>
+                  <div class="blog-data">
+                    <p class="all-blog-individual-author">
+                      <span>By - </span>Aditya Giri
+                    </p>
+                    <p class="all-blog-individual-title">
+                      Legendary Rides: Exploring the Iconic Allure of Royal
+                      Enfield Motorcycles
+                    </p>
+                  </div>
+                </div>
+                <div class="all-blogs-individual-category-individual-blog">
+                  <div
+                    class="all-blogs-individual-category-individual-blog-image"
+                  >
+                    <img
+                      src="./public/images/trending2.webp"
+                      alt="all-blogs-image"
+                    />
+                  </div>
+                  <div class="blog-data">
+                    <p class="all-blog-individual-author">
+                      <span>By - </span>Aditya Giri
+                    </p>
+                    <p class="all-blog-individual-title">
+                      Legendary Rides: Exploring the Iconic Allure of Royal
+                      Enfield Motorcycles
+                    </p>
+                  </div>
+                </div>
+                <div class="all-blogs-individual-category-individual-blog">
+                  <div
+                    class="all-blogs-individual-category-individual-blog-image"
+                  >
+                    <img
+                      src="./public/images/trending1.jpeg"
+                      alt="all-blogs-image"
+                    />
+                  </div>
+                  <div class="blog-data">
+                    <p class="all-blog-individual-author">
+                      <span>By - </span>Aditya Giri
+                    </p>
+                    <p class="all-blog-individual-title">
+                      Legendary Rides: Exploring the Iconic Allure of Royal
+                      Enfield Motorcycles
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Contact tab -->
