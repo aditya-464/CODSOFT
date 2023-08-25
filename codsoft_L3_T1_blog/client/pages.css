@@ -331,6 +331,10 @@ textarea {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    transition-duration: 200ms;
+}
+.all-blogs-individual-category-individual-blog:hover{
+    color: var(--primary-dark);
 }
 
 .all-blogs-individual-category-individual-blog .blog-overlay {
@@ -369,6 +373,9 @@ textarea {
     width: 100%;
     height: 100%;
     transition-duration: 200ms;
+}
+.all-blogs-individual-category-individual-blog img:hover{
+    opacity: 0.9;
 }
 
 .all-blogs-individual-category-individual-blog .all-blog-individual-author{
