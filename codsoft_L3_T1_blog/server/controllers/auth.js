@@ -5,15 +5,15 @@ export const signup = async (req, res) => {
     try {
         const { username, email, password } = req.body;
         if (!username || !email || !password) {
-            return res.status(400).send("Please fill up all fields!");
+            return res.status(400).json({ error: "Please fill up all fields!" });
         }
         const usernameExist = await User.findOne({ username: username });
         if (usernameExist) {
-            return res.status(400).send("Username already exists!");
+            return res.status(400).json({ error: "Username already exists!" });
         }
         const emailExist = await User.findOne({ email: email });
         if (emailExist) {
-            return res.status(400).send("Email already exists!");
+            return res.status(400).json({ error: "Email already exists!" });
         }
         const salt = await bcrypt.genSalt(11);
         const hashedPassword = await bcrypt.hash(password, salt);
@@ -34,15 +34,15 @@ export const login = async (req, res) => {
     try {
         const { email, password } = req.body;
         if (!email || !password) {
-            return res.status(400).send("Please fill up all fields!");
+            return res.status(400).json({ error: "Please fill up all fields!" });
         }
         const user = await User.findOne({ email: email });
         if (!user) {
-            return res.status(400).send("User does not exist!");
+            return res.status(400).json({ error: "User does not exist!" });
         }
         const matchPassword = await bcrypt.compare(password, user.password);
         if (!matchPassword) {
-            return res.status(400).send("Invalid Credentials!");
+            return res.status(400).json({ error: "Invalid Credentials!" });
         }
         user.password = "";
         return res.status(200).json({ user });

@@ -16,7 +16,7 @@
       <div class="home-inner-div">
 
         
-        <div class="home-content display-none">
+        <div class="home-content ">
           <div class="home-content-inner">
             <p class="title">Svanit</p>
             <p class="subtitle">
@@ -39,15 +39,18 @@
           <div class="login-content-inner">
             <p class="title">Login</p>
             <div class="login-input">
-              <input type="email" placeholder="Email" name="email" />
+              <input id="login-email" type="email" placeholder="Email" name="email" />
             </div>
             <div class="login-input">
-              <input type="password" placeholder="Password" name="password" />
+              <input id="login-password" type="password" placeholder="Password" name="password" />
             </div>
             <div class="btn-grp">
               <div class="login-btn">
                 <p>Login</p>
               </div>
+            </div>
+            <div class="error">
+              <p class="error-message">Error</p>
             </div>
             <div class="already-account">
               <p>Don't have an account? <span class="link">Signup</span> </p>
@@ -55,22 +58,25 @@
           </div>
         </div>
 
-        <div class="signup-content ">
+        <div class="signup-content display-none">
           <div class="signup-content-inner">
             <p class="title">Signup</p>
             <div class="signup-input">
-              <input type="text" placeholder="Username" name="username" />
+              <input id="signup-username" type="text" placeholder="Username" name="username" />
             </div>
             <div class="signup-input">
-              <input type="email" placeholder="Email" name="email" />
+              <input id="signup-email" type="email" placeholder="Email" name="email" />
             </div>
             <div class="signup-input">
-              <input type="password" placeholder="Password" name="password" />
+              <input id="signup-password" type="password" placeholder="Password" name="password" />
             </div>
             <div class="btn-grp">
               <div class="signup-btn">
                 <p>Signup</p>
               </div>
+            </div>
+            <div class="error">
+              <p class="error-message">Error</p>
             </div>
             <div class="already-account">
               <p>Already have an account? <span class="link">Login</span> </p>
@@ -83,5 +89,6 @@
         </div>
       </div>
     </div>
+    <script src="indexPage.js"></script>
   </body>
 </html>

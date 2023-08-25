@@ -110,15 +110,16 @@ html {
 }
 
 .home-inner-div .btn-grp {
+    width: 100%;
     display: flex;
     letter-spacing: 0.15rem;
     margin-top: 5rem;
 }
 
 .login-btn {
+    width: 50%;
     color: var(--primary-dark);
     font-size: var(--h5);
-    width: 40%;
     border: 1px solid var(--primary-dark);
     text-align: center;
     padding: 1.2rem 0;
@@ -129,10 +130,10 @@ html {
 }
 
 .signup-btn {
+    width: 50%;
     color: var(--primary-light);
     background-color: var(--primary-dark);
     font-size: var(--h5);
-    width: 40%;
     text-align: center;
     padding: 1.2rem 0;
     margin-left: 5rem;
@@ -213,6 +214,14 @@ html {
 
 .signup-btn {
     margin-left: 0;
+}
+
+.signup-content .error .error-message, .login-content .error .error-message{
+    margin: 1rem 0;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    color: red;
+    visibility: hidden;
 }
 
 .already-account {
