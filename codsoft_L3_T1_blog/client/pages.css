@@ -555,9 +555,14 @@ textarea {
     width: 100%;
     margin-bottom: 3rem;
     outline: none;
-    border: 1px solid var(--primary-dark);
+    border: 1px solid black;
     border-radius: 1px;
     letter-spacing: 0.1rem;
+}
+
+.update-blog-container input:focus,
+textarea:focus{
+    border: 1px solid var(--primary-dark);
 }
 
 .update-blog-container .select-file-input {
