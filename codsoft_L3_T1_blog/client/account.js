@@ -1,15 +1,13 @@
 const accountLeft = document.querySelector(".account-left");
 const accountRight = document.querySelector(".account-right");
-const navbar = document.querySelector(".navbar-outer");
+// const navbar = document.querySelector(".navbar-outer");
 const icon = document.querySelector(".options-list-icon");
 
 // Setting margin-top for account section
-let navHeight = navbar.getBoundingClientRect().height;
+// let navHeight = navbar.getBoundingClientRect().height;
 const accountSection = document.querySelector(".account-section");
 accountSection.style.marginTop = `${navHeight}`+"px";
 accountRight.style.paddingTop = `${navHeight}`+"px";
-
-
 
 
 icon.addEventListener("click", () => {
