@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import authRoutes from "./routes/auth.js";
 import blogRoutes from "./routes/blog.js";
+import contactRoutes from "./routes/contact.js";
 import multer from "multer";
 import { fileURLToPath } from 'url'
 import path from 'path'
@@ -30,6 +31,8 @@ app.use(express.urlencoded({
 }));
 app.use("/auth", authRoutes);
 app.use("/blog", blogRoutes);
+app.use("/contact", contactRoutes);
+
 
 const storage = multer.diskStorage({
     destination: function (req, file, callback) {

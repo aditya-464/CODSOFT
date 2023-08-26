@@ -484,13 +484,12 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 0.5rem;
     padding-left: 3rem;
 }
 
 .contact-left .title {
     font-size: var(--h2);
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .contact-form-icons {
@@ -522,14 +521,29 @@ textarea:focus {
     border: 1px solid var(--primary-dark);
 }
 
+.contact-input textarea{
+    margin-bottom: 1rem;
+}
+
+.contact-section .error{
+    width: 100%;
+    color: red;
+    margin-bottom: 1rem;
+    font-size: 16px;
+}
+.contact-section .error .error-message{
+    visibility: hidden;
+}
+
 .contact-btn {
     width: 100%;
+    letter-spacing: 0.1rem;
 }
 
 .contact-btn .btn {
     width: 40%;
-    padding: 1.2rem;
-    font-size: var(--h5);
+    padding: 1rem;
+    font-size: var(--h6);
     background-color: var(--primary-dark);
     color: var(--primary-light);
     text-align: center;
@@ -544,6 +558,13 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.contact-icons a{
+    color: black;
+    transition-duration: 200ms;
+}
+.contact-icons a:hover{
+    color: var(--primary-dark);
 }
 
 .contact-icons .contact-icon {

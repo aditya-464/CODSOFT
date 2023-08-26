@@ -72,7 +72,7 @@
 
         <!-- Home tab -->
         <!-- Hero section -->
-        <div class="hero-section ">
+        <div class="hero-section display-none">
           <div class="hero-left">
             <div class="title">
               <p>Explore the Essence of Life Through <span>Svanit</span></p>
@@ -90,7 +90,7 @@
         </div>
 
         <!-- Hero section ques1 -->
-        <div class="hero-section ques1 ">
+        <div class="hero-section ques1 display-none">
           <div class="ques1-left">
             <img class="zoom" src="./public/images/ques1.webp" alt="" />
           </div>
@@ -108,7 +108,7 @@
         </div>
 
         <!-- Hero section ques2 -->
-        <div class="hero-section ques2 ">
+        <div class="hero-section ques2 display-none">
           <div class="ques2-left">
             <img class="zoom" src="./public/images/ques2-1.jpeg" alt="" />
           </div>
@@ -311,9 +311,7 @@
                     />
                   </div>
                   <div class="blog-data">
-                    <p class="my-blog-individual-category">
-                      Marketing
-                    </p>
+                    <p class="my-blog-individual-category">Marketing</p>
                     <p class="my-blog-individual-title">
                       Aurora Awakenings: Nature's Spectacular Light Show and Its
                       Mesmerizing Secrets
@@ -330,9 +328,7 @@
                     />
                   </div>
                   <div class="blog-data">
-                    <p class="my-blog-individual-category">
-                      Lifestyle
-                    </p>
+                    <p class="my-blog-individual-category">Lifestyle</p>
                     <p class="my-blog-individual-title">
                       Radiant Beginnings: Capturing the Magic and Serenity of a
                       Sunrise
@@ -349,9 +345,7 @@
                     />
                   </div>
                   <div class="blog-data">
-                    <p class="my-blog-individual-category">
-                      Sports
-                    </p>
+                    <p class="my-blog-individual-category">Sports</p>
                     <p class="my-blog-individual-title">
                       Legendary Rides: Exploring the Iconic Allure of Royal
                       Enfield Motorcycles
@@ -368,9 +362,7 @@
                     />
                   </div>
                   <div class="blog-data">
-                    <p class="my-blog-individual-category">
-                      Food
-                    </p>
+                    <p class="my-blog-individual-category">Food</p>
                     <p class="my-blog-individual-title">
                       Legendary Rides: Exploring the Iconic Allure of Royal
                       Enfield Motorcycles
@@ -387,9 +379,7 @@
                     />
                   </div>
                   <div class="blog-data">
-                    <p class="my-blog-individual-category">
-                      Travel
-                    </p>
+                    <p class="my-blog-individual-category">Travel</p>
                     <p class="my-blog-individual-title">
                       Legendary Rides: Exploring the Iconic Allure of Royal
                       Enfield Motorcycles
@@ -617,45 +607,60 @@
         </div>
 
         <!-- Contact tab -->
-        <div class="contact-section display-none">
+        <div class="contact-section">
           <div class="contact-left">
             <div class="title">
               <p>Contact</p>
             </div>
             <div class="contact-form-icons">
-              <div class="contact-form">
+              <form class="contact-form">
                 <div class="contact-input">
-                  <input type="email" placeholder="Email" name="email" />
+                  <input
+                    type="email"
+                    id="contact-email"
+                    placeholder="Email"
+                    name="email"
+                  />
                 </div>
                 <div class="contact-input">
                   <textarea
                     type="text"
+                    id="contact-message"
                     placeholder="Message"
                     rows="5"
                     name="message"
                   ></textarea>
+                </div>
+                <div class="error">
+                  <p class="error-message">Error</p>
                 </div>
                 <div class="contact-btn">
                   <div class="btn">
                     <p>Send</p>
                   </div>
                 </div>
-              </div>
+              </form>
               <div class="contact-icons">
                 <div class="contact-icon">
-                  <i class="fa-brands fa-linkedin-in"></i>
+                  <a
+                    href="https://www.linkedin.com/in/aditya-giri-948420226/"
+                    target="_blank"
+                  >
+                  <i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <div class="contact-icon">
-                  <i class="fa-brands fa-x-twitter"></i>
+                  <a href="https://twitter.com/01100001_here" target="_blank"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
                 </div>
                 <div class="contact-icon">
-                  <i class="fa-brands fa-dribbble"></i>
+                  <a href="https://dribbble.com/adityagiri01" target="_blank"> <i class="fa-brands fa-dribbble"></i></a>
                 </div>
                 <div class="contact-icon">
-                  <i class="fa-brands fa-instagram"></i>
+                  <a href="https://www.instagram.com/adityagiri4406/?hl=en" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="contact-icon">
-                  <i class="fa-solid fa-user"></i>
+                  <a href="https://agwebportfolio.netlify.app/" target="_blank"> <i class="fa-regular fa-user"></i></a>
                 </div>
               </div>
             </div>
@@ -849,6 +854,7 @@
     </div>
     <script src="heroSection.js"></script>
     <script src="about.js"></script>
+    <script src="contact.js"></script>
     <script src="page.js"></script>
     <script src="account.js"></script>
     <script type="module" src="imgUpload.js"></script>
