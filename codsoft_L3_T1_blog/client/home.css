@@ -190,8 +190,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1.5rem;
-    padding-right: 0.5rem;
+    padding: 0 2rem;
 }
 
 .hero-left .title {
@@ -311,7 +310,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     opacity: 0.9;
 }
 
@@ -352,7 +351,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 }
 
 .ques2-right .title {
@@ -372,7 +371,7 @@ html {
 /* About section */
 .about-section {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
 }
 
@@ -382,7 +381,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     letter-spacing: 0.1rem;
 }
 
@@ -439,7 +438,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
 }
 
 .me-right .title {
@@ -809,22 +808,23 @@ textarea:focus {
     cursor: pointer;
 }
 
-.credentials-btn-row{
+.credentials-btn-row {
     width: 100%;
     margin-top: 5rem;
     display: flex;
     justify-content: flex-end;
 }
 
-.account-right-container-row .credentials-btn-grp{
+.account-right-container-row .credentials-btn-grp {
     width: 47%;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
 }
 
 /* Credentials */
 
-.credentials-btn-grp .cancel, .save{
+.credentials-btn-grp .cancel,
+.save {
     width: 47%;
     background-color: var(--primary-dark);
     color: var(--primary-light);
@@ -837,7 +837,7 @@ textarea:focus {
     cursor: pointer;
 }
 
-.credentials-btn-grp .cancel{
+.credentials-btn-grp .cancel {
     background-color: var(--primary-light);
     color: var(--primary-dark);
     border: 1px solid var(--primary-dark);
@@ -846,19 +846,20 @@ textarea:focus {
 
 /* Logout */
 
-.logout-ques p{
+.logout-ques p {
     margin: auto;
     font-size: var(--h5);
 }
 
-.logout-btn-grp{
+.logout-btn-grp {
     width: 50%;
     display: flex;
     justify-content: space-between;
     margin: auto;
 }
 
-.logout-btn-grp .yes, .no{
+.logout-btn-grp .yes,
+.no {
     width: 47%;
     background-color: var(--primary-dark);
     color: var(--primary-light);
@@ -873,7 +874,7 @@ textarea:focus {
     letter-spacing: 0.1rem;
 }
 
-.logout-btn-grp .yes{
+.logout-btn-grp .yes {
     background-color: var(--primary-light);
     color: var(--primary-dark);
     border: 1px solid var(--primary-dark);
