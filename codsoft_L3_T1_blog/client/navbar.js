@@ -12,12 +12,16 @@ const aboutTabBtn = document.querySelector("#about-tab-btn");
 const pagesTabBtn = document.querySelector("#pages-tab-btn");
 const contactTabBtn = document.querySelector("#contact-tab-btn");
 const accountTabBtn = document.querySelector("#account-tab-btn");
+const optionsListBtn  = document.querySelector(".options-list-icon");
 
 const changeDisplayTab = (val) => {
     switch (val) {
         case 1:
             // Hero sections
             if (heroSections[0].classList.contains("display-none")) {
+                if(!optionsListBtn.classList.contains("display-none")){
+                    optionsListBtn.classList.add("display-none");
+                }
                 footerSection.style.visibility = "hidden";
                 if (!aboutSections[0].classList.contains("display-none")) {
                     for (let i = 0; i < 3; i++) {
@@ -46,6 +50,9 @@ const changeDisplayTab = (val) => {
         case 2:
             // About section
             if (aboutSections[0].classList.contains("display-none")) {
+                if(!optionsListBtn.classList.contains("display-none")){
+                    optionsListBtn.classList.add("display-none");
+                }
                 footerSection.style.visibility = "hidden";
                 if (!heroSections[0].classList.contains("display-none")) {
                     for (let i = 0; i < 3; i++) {
@@ -73,6 +80,9 @@ const changeDisplayTab = (val) => {
         case 3:
             // Pages section
             if (pagesSection.classList.contains("display-none")) {
+                if(!optionsListBtn.classList.contains("display-none")){
+                    optionsListBtn.classList.add("display-none");
+                }
                 footerSection.style.visibility = "hidden";
                 if (!heroSections[0].classList.contains("display-none")) {
                     for (let i = 0; i < 3; i++) {
@@ -100,6 +110,9 @@ const changeDisplayTab = (val) => {
         case 4:
             // Contact section
             if (contactSection.classList.contains("display-none")) {
+                if(!optionsListBtn.classList.contains("display-none")){
+                    optionsListBtn.classList.add("display-none");
+                }
                 footerSection.style.visibility = "hidden";
                 if (!heroSections[0].classList.contains("display-none")) {
                     for (let i = 0; i < 3; i++) {
@@ -147,6 +160,7 @@ const changeDisplayTab = (val) => {
                 
                 // show account sections
                 accountSection.classList.remove("display-none");
+                optionsListBtn.classList.remove("display-none");
                 footerSection.style.visibility = "visible";
             }
 
