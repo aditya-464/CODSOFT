@@ -1,4 +1,4 @@
-const contactSection = document.querySelector(".contact-section");
+// const contactSection = document.querySelector(".contact-section");
 const contactBtn = document.querySelector(".contact-section .contact-btn .btn");
 const contactError = document.querySelector(".contact-section .error-message");
 

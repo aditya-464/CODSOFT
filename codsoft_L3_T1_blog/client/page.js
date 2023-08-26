@@ -1,4 +1,4 @@
-const pagesSection = document.querySelector(".pages-section");
+// const pagesSection = document.querySelector(".pages-section");
 // const homeInnerDiv = document.querySelector(".home-inner-div");
 const allBlogIntroduction = document.querySelector(".all-blogs-introduction");
 const myBlogIntroduction = document.querySelector(".my-blogs-introduction");
