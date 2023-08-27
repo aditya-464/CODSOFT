@@ -522,17 +522,18 @@ textarea:focus {
     border: 1px solid var(--primary-dark);
 }
 
-.contact-input textarea{
+.contact-input textarea {
     margin-bottom: 1rem;
 }
 
-.contact-section .error{
+.contact-section .error {
     width: 100%;
     color: red;
     margin-bottom: 1rem;
     font-size: 16px;
 }
-.contact-section .error .error-message{
+
+.contact-section .error .error-message {
     visibility: hidden;
 }
 
@@ -560,11 +561,13 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
 }
-.contact-icons a{
+
+.contact-icons a {
     color: black;
     transition-duration: 200ms;
 }
-.contact-icons a:hover{
+
+.contact-icons a:hover {
     color: var(--primary-dark);
 }
 
@@ -654,6 +657,13 @@ textarea:focus {
     margin: auto;
 }
 
+.user-details-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .account-right-container-row {
     width: 100%;
     display: flex;
@@ -670,20 +680,47 @@ textarea:focus {
 }
 
 .account-right-container-field label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .account-right-container-field input {
     width: 100%;
     font-family: "Prata", "serif";
     font-size: var(--h5);
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     outline: none;
     border: 1px solid black;
     border-radius: 1px;
     letter-spacing: 0.1rem;
     opacity: 0.9;
     margin-bottom: 1rem;
+
+}
+
+.user-details-field input{
+    pointer-events: none;
+}
+
+ ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1;
+    color: black;
+    /* color: #E57C23; */
+    /* Firefox */
+}
+
+.account-right-container-field :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    opacity: 1;
+    color: black;
+
+}
+
+.account-right-container-field ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    opacity: 1;
+    color: black;
+
 }
 
 .account-right-container-field input:focus {
@@ -703,26 +740,28 @@ textarea:focus {
     justify-content: space-between;
 }
 
-.account-btn-grp .edit-btn,
+.account-btn-grp .cancel-btn,
 .save-btn {
     width: 45%;
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    padding: 1rem;
+    padding: 1rem !important;
     text-align: center;
     letter-spacing: 0.1rem;
     border-radius: 1px;
 }
 
-.account-btn-grp .edit-btn:hover,
+.account-btn-grp .cancel-btn:hover,
 .save-btn:hover {
     cursor: pointer;
 }
 
-.account-btn-grp .edit-btn {
+.account-btn-grp .cancel-btn {
     background-color: var(--primary-light);
     color: var(--primary-dark);
     border: 1px solid var(--primary-dark);
+    margin-left: 0;
+    visibility: hidden;
 }
 
 
@@ -851,6 +890,18 @@ textarea:focus {
 
 /* Credentials */
 
+
+.credentials-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.credential-field{
+    pointer-events: none;
+}
+
 .credentials-btn-grp .cancel,
 .save {
     width: 47%;
@@ -869,6 +920,7 @@ textarea:focus {
     background-color: var(--primary-light);
     color: var(--primary-dark);
     border: 1px solid var(--primary-dark);
+    visibility: hidden;
 }
 
 
